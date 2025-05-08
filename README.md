@@ -3,6 +3,6 @@ Este es el repositorio del seguimiento 2 (Dendrograma) para la asignatura Análi
 
 Autores:
 
-Brandon Stiven Ceballos Delgado
-Ana Maria Mendoza Cadavid
+Brandon Stiven Ceballos Delgado,
+Ana Maria Mendoza Cadavid,
 Diego Alejandro Carvajal Camargo

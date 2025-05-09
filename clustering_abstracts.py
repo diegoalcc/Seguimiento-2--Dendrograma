@@ -8,9 +8,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.cluster.hierarchy import dendrogram, linkage
 
-#############################################
-# PREPROCESAMIENTO DEL TEXTO
-#############################################
 
 def preprocess_text(text):
     """
@@ -21,9 +18,6 @@ def preprocess_text(text):
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
-#############################################
-# TF-IDF Y MATRIZ DE DISTANCIAS
-#############################################
 
 def compute_distance_matrix(documents):
     """
@@ -36,9 +30,6 @@ def compute_distance_matrix(documents):
     distance = 1 - similarity
     return distance
 
-#############################################
-# ALGORITMOS DE CLUSTERING JERÁRQUICO
-#############################################
 
 def hierarchical_clustering_average(dist_matrix):
     """
@@ -54,9 +45,6 @@ def hierarchical_clustering_ward(dist_matrix):
     """
     return linkage(dist_matrix, method='ward')
 
-#############################################
-# GENERACIÓN DE DENDROGRAMAS
-#############################################
 
 def plot_dendrogram(linkage_matrix, labels, title, filename):
     """
@@ -83,9 +71,6 @@ def plot_dendrogram(linkage_matrix, labels, title, filename):
     print(f"Dendrograma guardado en: {filename}")
     plt.close()
 
-#############################################
-# PROCESO PRINCIPAL
-#############################################
 
 def main():
     # Leer el JSON generado
